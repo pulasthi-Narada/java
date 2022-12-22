@@ -5,7 +5,13 @@ import java.util.List;
 /**
  * @author pulasthi narada
  */
+class human {
 
+}
+
+class man extends human{
+
+}
 class ResponseDto<T,K,N extends Number>{
     private T payLoad;
     private N count;
@@ -49,9 +55,21 @@ public class Generic {
   private   List abc = new ArrayList();
   private   List<String> abcd = new ArrayList();
 
+  //using wild card
   public  void test2(List<?> myList){
       System.out.println(myList.toString());
   }
+
+  //using wild card
+  public  void test3(List<? extends human> myList){
+      System.out.println(myList.toString());
+  }
+    //using wild card
+    public  void test4(List<? super human> myList){
+        System.out.println(myList.toString());
+    }
+
+  //generic method
     public  <T> void test3(T name){
         System.out.println(name);
     }

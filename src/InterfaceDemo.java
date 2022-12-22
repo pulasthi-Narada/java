@@ -19,7 +19,8 @@ interface Writer{
     static  void sayYes(){
         System.out.println("yes");
     }
-    void write();
+    void  write();
+
 
     //  java 1.8 (java 8) can define default methods in interfaces
     default void hello(){

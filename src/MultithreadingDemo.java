@@ -109,6 +109,6 @@ public class MultithreadingDemo  {
         System.out.println("Bye");
 
 
-
+        System.out.println("active thread " + Thread.activeCount());
     }
 }
